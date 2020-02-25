@@ -5,18 +5,35 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "storybook": "NODE_PATH=$NODE_PATH:./ start-storybook -s ./public -p 9001 -c ./.storybook"
   },
   "dependencies": {
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.8.3",
+    "@zeit/next-sass": "^1.0.1",
     "isomorphic-unfetch": "3.0.0",
     "next": "latest",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@storybook/react": "^5.3.13",
+    "@types/classnames": "^2.2.9",
+    "@types/js-cookie": "^2.2.4",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
+    "@types/storybook__react": "^4.0.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "prettier": "^1.19.1",
+    "sass-resources-loader": "^2.0.1",
     "typescript": "3.7.3"
   },
   "license": "ISC"
